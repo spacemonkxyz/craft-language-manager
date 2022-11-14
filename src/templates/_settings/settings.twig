@@ -1,0 +1,24 @@
+{% import '_includes/forms.twig' as forms %}
+
+{{ forms.lightswitchField({
+    label:          "Keep Query Parameters?"|t('language-manager'),
+    instructions:   "Keep the Query parameters when switching the language?"|t('language-manager'),
+    id:             'keepQueryParameters',
+    name:           'keepQueryParameters',
+    on:             settings.keepQueryParameters,
+    disabled:       'keepQueryParameters' in overrides,
+    tip:            'keepQueryParameters' in overrides ? "This setting is overridden in a config file and cannot be changed."|t('language-manager') : null,
+    errors:         settings.getErrors('keepQueryParameters')
+}) }}
+
+{{ forms.selectizeField({
+    label:          "Label"|t('language-manager'),
+    instructions:   "How should the label of the language switcher be displayed?"|t('language-manager'),
+    id:             'labelType',
+    name:           'labelType',
+    disabled:       'labelType' in overrides,
+    tip:            'labelType' in overrides ? "This setting is overridden in a config file and cannot be changed."|t('language-manager') : null,
+    value:          settings.labelType,
+    options:        labelTypeOptions,
+    errors:         settings.getErrors('labelType'),
+}) }}

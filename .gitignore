@@ -1,0 +1,7 @@
+# COMPOSER
+/vendor
+
+# MISC FILES
+.cache
+.DS_Store
+.idea

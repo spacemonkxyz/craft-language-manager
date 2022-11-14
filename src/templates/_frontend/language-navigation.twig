@@ -1,0 +1,14 @@
+{% set languageManagerPages = getLanguageManagerPages() %}
+{% if languageManagerPages is defined and languageManagerPages|length > 1 %}
+    <nav aria-label="{{ 'Change language'|t('language-manager') }}" class="language-manager">
+        <ul>
+            {% for page in languageManagerPages %}
+                <li{% if page.isActive %} class="active"{% endif %}>
+                    <a href="{{ page.url ~ page.queryParameters }}" hreflang="{{ page.isoLanguageCode }}" lang="{{ page.isoLanguageCode }}">
+                        {{ page.label }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+{% endif %}

@@ -1,0 +1,11 @@
+{% set languageManagerPages = getLanguageManagerPages() %}
+{% if languageManagerPages is defined and languageManagerPages|length > 1 %}
+    {% for page in languageManagerPages %}
+        {% if not page.isFallback %}
+            <link rel="alternate" hreflang="{{ page.isoLanguageCode }}" href="{{ page.url }}"/>
+            {% if page.isPrimarySite %}
+                <link rel="alternate" hreflang="x-default" href="{{ page.url }}"/>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
