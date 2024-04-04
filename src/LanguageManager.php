@@ -8,7 +8,7 @@ namespace spacemonk\language_manager;
 
 use Craft;
 use craft\base\Model;
-use craft\base\plugin;
+use craft\base\Plugin;
 use craft\events\RegisterTemplateRootsEvent;
 use craft\i18n\PhpMessageSource;
 use craft\web\View;
@@ -72,8 +72,10 @@ class LanguageManager extends Plugin
     {
         Craft::$app->i18n->translations[$this->handle] = [
             'class' => PhpMessageSource::class,
+            'sourceLanguage' => 'en',
             'basePath' => __DIR__ . '/translations',
             'allowOverrides' => true,
+            'forceTranslation' => true,
         ];
     }
 

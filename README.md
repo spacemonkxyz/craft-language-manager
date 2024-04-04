@@ -60,18 +60,18 @@ The output will look like this:
 
 ```html
 <nav aria-label="Change language" class="language-manager">
-    <ul>
-        <li class="active">
-            <a href="https://yourwebsite.domain/" hreflang="en" lang="en">
-            English
-            </a>
-        </li>
-        <li>
-            <a href="https://yourwebsite.domain/de/" hreflang="de" lang="de">
-            German
-            </a>
-        </li>
-    </ul>
+  <ul>
+    <li class="active">
+      <a href="https://yourwebsite.domain/" hreflang="en" lang="en">
+        English
+      </a>
+    </li>
+    <li>
+      <a href="https://yourwebsite.domain/de/" hreflang="de" lang="de">
+        German
+      </a>
+    </li>
+  </ul>
 </nav>
 ```
 
@@ -84,6 +84,7 @@ As a starting point you can copy the code from [the hook template here](https://
 ### Labels
 
 You can choose from several options to display the language switcher labels.
+
 1. Language Code (e.g. 'EN')
 2. Long Language Code (e.g. 'EN-US')
 3. Language Name (e.g. 'English')
@@ -111,9 +112,9 @@ You can also use caching.
 The output will look like this:
 
 ```html
-<link rel="alternate" hreflang="en" href="https://yourwebsite.domain/"/>
-<link rel="alternate" hreflang="x-default" href="https://yourwebsite.domain/"/>
-<link rel="alternate" hreflang="de" href="https://yourwebsite.domain/de/"/>
+<link rel="alternate" hreflang="en" href="https://yourwebsite.domain/" />
+<link rel="alternate" hreflang="x-default" href="https://yourwebsite.domain/" />
+<link rel="alternate" hreflang="de" href="https://yourwebsite.domain/de/" />
 ```
 
 The `x-default` attribute is set to the primary site.
@@ -178,7 +179,9 @@ return [
     'labelType' => 'code'
 ];
 ```
+
 Following options are possible:
+
 - `keepQueryParameters` &rarr; `true`, `false`
 - `labelType` &rarr; `code`, `code-long`, `name`, `name-long`, `custom`
   - They represent each of the [options explained here](#labels)

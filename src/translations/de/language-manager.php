@@ -9,6 +9,7 @@
  * @package     spacemonk
  * @since       0.1.0
  */
+
 return [
     // Aria Label
     'Change language' => 'Sprache ändern',
