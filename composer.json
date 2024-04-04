@@ -2,7 +2,7 @@
   "name": "spacemonk/craft-language-manager",
   "description": "This plugin adds a language navigation and correct hreflang header attributes for multi language sites",
   "type": "craft-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "craft",
     "cms",
@@ -25,7 +25,7 @@
     "issues": "https://github.com/spacemonkxyz/craft-language-manager/issues?state=open"
   },
   "require": {
-    "craftcms/cms": "^4.0.0"
+    "craftcms/cms": "^4.0|^5.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest"
