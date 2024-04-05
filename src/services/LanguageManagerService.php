@@ -87,9 +87,11 @@ class LanguageManagerService extends Component
         $languageParts = explode('-', $language);
         $languageCode = $languageParts[0];
 
-        $translationLanguage = LanguageManager::$plugin->getSettings()->showLanguageInThatLanguage === true ? $language : Craft::$app->language;
+        $settings = LanguageManager::$plugin->getSettings();
 
-        return match (LanguageManager::$plugin->getSettings()->labelType) {
+        $translationLanguage = $settings->showLanguageInThatLanguage === true ? $language : Craft::$app->language;
+
+        return match ($settings->labelType) {
             LabelType::LABEL_TYPE_CUSTOM => Craft::t(LanguageManager::$plugin->handle, $language),
             LabelType::LABEL_TYPE_NAME => ucwords(Craft::$app->getI18n()->getLocaleById($languageCode)->getDisplayName($translationLanguage)),
             LabelType::LABEL_TYPE_NAME_LONG => ucwords(Craft::$app->getI18n()->getLocaleById($language)->getDisplayName($translationLanguage)),
