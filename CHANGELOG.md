@@ -1,5 +1,11 @@
 # Language Manager Changelog
 
+## 1.1.0 - 2024-04-06
+
+### Added
+
+- Added new settings option to show the name of the language each in their own language (e.g. "English", "Deutsch", and "Français")
+
 ## 1.0.2 - 2024-04-05
 
 ### Fixed
