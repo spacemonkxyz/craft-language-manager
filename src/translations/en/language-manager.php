@@ -17,6 +17,8 @@ return [
     // Settings
     'Keep Query Parameters?' => 'Keep Query Parameters?',
     'Keep the Query parameters when switching the language?' => 'Keep the Query parameters when switching the language?',
+    'Show language name in that language?' => 'Show language name in that language?',
+    'Show each language name in its own language when using a "Language Name" setting (e.g. "English", "Deutsch", and "Français").' => 'Show each language name in its own language when using a "Language Name" setting (e.g. "English", "Deutsch", and "Français").',
     'Label' => 'Label',
     'How should the label of the language switcher be displayed?' => 'How should the label of the language switcher be displayed?',
     'This setting is overridden in a config file and cannot be changed.' => 'This setting is overridden in a config file and cannot be changed.',
