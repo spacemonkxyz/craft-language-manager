@@ -91,8 +91,8 @@ class LanguageManagerService extends Component
 
         return match (LanguageManager::$plugin->getSettings()->labelType) {
             LabelType::LABEL_TYPE_CUSTOM => Craft::t(LanguageManager::$plugin->handle, $language),
-            LabelType::LABEL_TYPE_NAME => Craft::$app->getI18n()->getLocaleById($languageCode)->getDisplayName($translationLanguage),
-            LabelType::LABEL_TYPE_NAME_LONG => Craft::$app->getI18n()->getLocaleById($language)->getDisplayName($translationLanguage),
+            LabelType::LABEL_TYPE_NAME => ucwords(Craft::$app->getI18n()->getLocaleById($languageCode)->getDisplayName($translationLanguage)),
+            LabelType::LABEL_TYPE_NAME_LONG => ucwords(Craft::$app->getI18n()->getLocaleById($language)->getDisplayName($translationLanguage)),
             LabelType::LABEL_TYPE_CODE_LONG => strtoupper($language),
             default => strtoupper($languageCode),
         };
