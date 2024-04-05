@@ -11,6 +11,17 @@
     errors:         settings.getErrors('keepQueryParameters')
 }) }}
 
+{{ forms.lightswitchField({
+    label:          "Show language name in that language?"|t('language-manager'),
+    instructions:   'Show each language name in its own language when using a "Language Name" setting (e.g. "English", "Deutsch", and "Français").'|t('language-manager'),
+    id:             'showLanguageInThatLanguage',
+    name:           'showLanguageInThatLanguage',
+    on:             settings.showLanguageInThatLanguage,
+    disabled:       'showLanguageInThatLanguage' in overrides,
+    tip:            'showLanguageInThatLanguage' in overrides ? "This setting is overridden in a config file and cannot be changed."|t('language-manager') : null,
+    errors:         settings.getErrors('showLanguageInThatLanguage')
+}) }}
+
 {{ forms.selectizeField({
     label:          "Label"|t('language-manager'),
     instructions:   "How should the label of the language switcher be displayed?"|t('language-manager'),

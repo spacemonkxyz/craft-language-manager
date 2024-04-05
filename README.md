@@ -176,6 +176,7 @@ Then add your config:
 
 return [
     'keepQueryParameters' => false,
+    'showLanguageInThatLanguage' => false,
     'labelType' => 'code'
 ];
 ```
@@ -183,5 +184,6 @@ return [
 Following options are possible:
 
 - `keepQueryParameters` &rarr; `true`, `false`
+- `showLanguageInThatLanguage` &rarr; `true`, `false`
 - `labelType` &rarr; `code`, `code-long`, `name`, `name-long`, `custom`
   - They represent each of the [options explained here](#labels)
