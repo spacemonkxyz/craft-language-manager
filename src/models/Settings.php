@@ -17,6 +17,7 @@ use spacemonk\language_manager\enums\LabelType;
 class Settings extends Model
 {
     public bool $keepQueryParameters = false;
+    public bool $showLanguageInThatLanguage = false;
     public string $labelType = LabelType::LABEL_TYPE_CODE;
 
     /**
@@ -25,7 +26,7 @@ class Settings extends Model
     public function rules(): array
     {
         return [
-            [['keepQueryParameters', 'labelType'], 'required'],
+            [['keepQueryParameters', 'showLanguageInThatLanguage', 'labelType'], 'required'],
         ];
     }
 }
