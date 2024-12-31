@@ -1,5 +1,11 @@
 # Language Manager Changelog
 
+## 1.1.1 - 2024-12-31
+
+### Updated
+
+- Updated dependencies
+
 ## 1.1.0 - 2024-04-06
 
 ### Added
