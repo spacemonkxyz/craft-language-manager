@@ -31,7 +31,7 @@ abstract class LabelType
      */
     public static function getLabelTypeOptionsForControlPanel(): array
     {
-        $labelTypes = self::_getAllLabelTypes();
+        $labelTypes = self::getAllLabelTypes();
         $labelTypeOptions = [];
         foreach ($labelTypes as $labelType) {
             $labelTypeOptions[] = [
@@ -58,7 +58,7 @@ abstract class LabelType
      *
      * @return string[] all label types
      */
-    private static function _getAllLabelTypes(): array
+    public static function getAllLabelTypes(): array
     {
         return [self::LABEL_TYPE_CODE, self::LABEL_TYPE_CODE_LONG, self::LABEL_TYPE_NAME, self::LABEL_TYPE_NAME_LONG, self::LABEL_TYPE_CUSTOM];
     }

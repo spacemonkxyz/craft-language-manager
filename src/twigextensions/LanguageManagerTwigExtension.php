@@ -27,7 +27,7 @@ class LanguageManagerTwigExtension extends AbstractExtension
         return 'Language Manager';
     }
 
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
             new TwigFunction('getLanguageManagerPages', [LanguageManager::$plugin->languageManagerService, 'getPagesForActivePage'])
