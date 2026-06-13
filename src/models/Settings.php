@@ -27,6 +27,7 @@ class Settings extends Model
     {
         return [
             [['keepQueryParameters', 'showLanguageInThatLanguage', 'labelType'], 'required'],
+            ['labelType', 'in', 'range' => LabelType::getAllLabelTypes()],
         ];
     }
 }

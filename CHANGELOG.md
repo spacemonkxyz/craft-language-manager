@@ -1,5 +1,14 @@
 # Language Manager Changelog
 
+## 1.1.2 - 2026-06-13
+
+### Fixed
+
+- Fixed a typo and "e.g."/"z.B." in the German translations
+
+> Note: Craft 4 reached end of life on 2026-04-30. Support for Craft 4 will be
+> dropped in a future major release; for now both Craft 4 and 5 remain supported.
+
 ## 1.1.1 - 2024-12-31
 
 ### Updated

@@ -21,12 +21,12 @@ return [
     'Show each language name in its own language when using a "Language Name" setting (e.g. "English", "Deutsch", and "Français").' => 'Soll jeder Sprachenname in der jeweiligen Sprache angezeigt werden, wenn eine "Name der Sprache" Einstellung verwendet wird (z.B. "English", "Deutsch", und "Français").',
     'Label' => 'Label',
     'How should the label of the language switcher be displayed?' => 'Wie sollte das Label vom Language Switcher angezeigt werden?',
-    'This setting is overridden in a config file and cannot be changed.' => 'Diese Einstellung wurde in einee Konfigurations-Datei überschrieben und kann nicht angepasst werden.',
+    'This setting is overridden in a config file and cannot be changed.' => 'Diese Einstellung wurde in einer Konfigurations-Datei überschrieben und kann nicht angepasst werden.',
 
     // Label Type Options
-    'label-type-code' => 'Code der Sprache (e.g. "EN")',
-    'label-type-code-long' => 'Code der Sprache (e.g. "EN-US")',
-    'label-type-name' => 'Name der Sprache (e.g. "English")',
-    'label-type-name-long' => 'Name der Sprache (e.g. "English (United States)")',
+    'label-type-code' => 'Code der Sprache (z.B. "EN")',
+    'label-type-code-long' => 'Code der Sprache (z.B. "EN-US")',
+    'label-type-name' => 'Name der Sprache (z.B. "English")',
+    'label-type-name-long' => 'Name der Sprache (z.B. "English (United States)")',
     'label-type-custom' => 'Custom (eigene Übersetzungen erstellen)',
 ];
